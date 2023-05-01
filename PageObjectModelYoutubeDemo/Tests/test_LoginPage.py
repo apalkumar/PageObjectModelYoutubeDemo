@@ -16,6 +16,7 @@ class Test_Login(BaseTest):
         title = self.loginpage.get_title(TestData.LOGIN_PAGE_TITLE)
         assert title == TestData.LOGIN_PAGE_TITLE
 
+
     def test_login(self):
         self.loginpage = LoginPage(self.driver)
         self.loginpage.do_login(TestData.USER_NAME, TestData.PASSWORD)
