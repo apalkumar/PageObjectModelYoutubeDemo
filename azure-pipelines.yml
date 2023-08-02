@@ -16,7 +16,7 @@ strategy:
       python.version: '3.5'
     Python36:
       python.version: '3.6'
-    Python37:
+    Python311:
       python.version: '3.11'
 
 steps:
@@ -36,3 +36,5 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+  
+
